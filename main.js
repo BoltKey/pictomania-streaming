@@ -8,6 +8,7 @@ function main() {
         "https://app.ziteboard.com/team/34059d7b-3c75-4f5a-ba43-27d29aaf15bc"
 
     ];
+    let scriptUrl = "https://script.google.com/macros/s/AKfycbz1bFUkbyG5uNXw9eL3gG0sMtLrGs45H_aLKdw47mfatv2GwQCtR1dDfunaCiWk95_j/exec";
     let urlParams = new URLSearchParams(window.location.search);
     Math.seedrandom(urlParams.get("seed") + urlParams.get("diff"));
     const allColors = ["green", "pink", "red", "yellow", "blue", "orange"];
@@ -25,6 +26,11 @@ function main() {
     }
     function sendVote(guesser, guessing, number) {
         console.log("sending vote ", guesser, guessing, number);
+        fetch(scriptUrl + "?guesser=" + guesser + "&guessing=" + guessing + "&number=" + number, {
+            
+            "method": "GET",
+            "mode": "no-cors"
+        }).then(data => console.log(data))
     }
     for (let i in boardUrls) {
         let url = boardUrls[i];
@@ -136,6 +142,11 @@ function main() {
         for (e of document.querySelectorAll("button")) {
             e.setAttribute("disabled", true);
         }
+        fetch(scriptUrl + "?guesser=" + playerColor + "&guessing=finished", {
+            
+            "method": "GET",
+            "mode": "no-cors"
+        }).then(data => console.log(data))
     }
 
     document.getElementById("game-wrap").appendChild(wordTable);
