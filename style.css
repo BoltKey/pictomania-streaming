@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+#game-wrap {
+    width: 1600px;
+    height: 1240px;
+    margin: auto;
+    background: gray;
+    position: relative;
+}
+
+.player-board {
+    background: white;
+    outline: solid 5px;
+    position: absolute;
+}
+
+.player-board.green {
+    outline-color: #74c655;
+}
+.player-board.red {
+    outline-color: #ae2c3a;
+}
+.player-board.blue {
+    outline-color: #2f86da;
+}
+.player-board.orange {
+    outline-color: #e68352;
+}
+.player-board.pink {
+    outline-color: #ff9ad5;
+}
+.player-board.yellow {
+    outline-color: #ffff49;
+}
+
+table {
+    position: absolute;
+    margin: auto;
+    bottom: -1px;
+    left: 626px;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 20px;
+}
+
+button {
+    width: 55px;
+    margin: 5px;
+    height: 55px;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 10000px;
+}
