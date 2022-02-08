@@ -9,7 +9,7 @@ function main() {
 
     ];
     let urlParams = new URLSearchParams(window.location.search);
-    Math.seedrandom(urlParams.get("seed"));
+    Math.seedrandom(urlParams.get("seed") + urlParams.get("diff"));
     const allColors = ["green", "pink", "red", "yellow", "blue", "orange"];
     let playerColor = urlParams.get("player");
     let allBoards = {};
