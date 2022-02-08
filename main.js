@@ -92,8 +92,17 @@ function main() {
     }
 
     let wordTable = document.createElement("table");
+    let tr = document.createElement("tr");
+    for (let letter of ["A", "B", "C"]) {
+        let th = document.createElement("th");
+        th.innerHTML = letter;
+        tr.appendChild(th);
+    }
+    wordTable.appendChild(tr);
+    
     for (let word = 0; word < 7; ++word) {
         let tr = document.createElement("tr");
+        
         for (let card of selectedCards) {
             let td = document.createElement("td");
             td.innerHTML = "<span class='word-number'>" + (word+1) + ".</span>" +
@@ -103,6 +112,32 @@ function main() {
         }
         wordTable.appendChild(tr);
     }
+    let allLetters = ["A", "A", "B", "B", "C", "C"];
+    let allNumbers = [1, 2, 3, 4, 5, 6, 7];
+    function drawRandom(arr) {
+        let i = Math.floor(Math.random() * arr.length);
+        let result = arr[i];
+        arr.splice(i, 1);
+        return result;
+    }
+    let wordsAssigned = {};
+    for (let color of allColors) {
+        wordsAssigned[color] = {letter: drawRandom(allLetters), n: drawRandom(allNumbers)};
+    }
+    document.getElementById("assignment").addEventListener("click", revealWord);
+    function revealWord(evt) {
+        let word = wordsAssigned[playerColor];
+        document.getElementById("assignment").innerHTML = word.letter + word.n;
+    }
+
+    document.getElementById("finished").addEventListener("click", finished);
+    function finished(evt) {
+        // TODO: send finished to the sheet
+        for (e of document.querySelectorAll("button")) {
+            e.setAttribute("disabled", true);
+        }
+    }
+
     document.getElementById("game-wrap").appendChild(wordTable);
 }
 

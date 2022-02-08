@@ -42,7 +42,7 @@ table {
     left: 626px;
     font-weight: bold;
     font-family: arial;
-    font-size: 20px;
+    font-size: 16.5px;
 }
 
 button {
@@ -52,4 +52,20 @@ button {
     font-size: 32px;
     font-weight: bold;
     border-radius: 10000px;
+}
+
+div#assignment {
+    position: absolute;
+    top: 1000px;
+    left: 100px;
+    font-size: 50px;
+    font-family: arial;
+    width: 327px;
+}
+
+button#finished {
+    position: absolute;
+    right: 120px;
+    bottom: 150px;
+    width: 300px;
 }
