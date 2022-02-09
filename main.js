@@ -80,9 +80,9 @@ function main() {
                 [50, -75],
                 [500, -75],
                 [950, -75],
-                [50, 630], 
-                [500, 630],
-                [950, 630],
+                [50, 660], 
+                [500, 660],
+                [950, 660],
             ]
             board.style.transform = "scale(0.7)";
         }
@@ -109,27 +109,67 @@ function main() {
         selectedCards.push(selectedDiff[index]);
         selectedDiff.splice(index, 1);
     }
-
-    let wordTable = document.createElement("table");
-    let tr = document.createElement("tr");
-    for (let letter of ["A", "B", "C"]) {
-        let th = document.createElement("th");
-        th.innerHTML = letter;
-        tr.appendChild(th);
-    }
-    wordTable.appendChild(tr);
-    
-    for (let word = 0; word < 7; ++word) {
-        let tr = document.createElement("tr");
-        for (let card of selectedCards) {
-        
-            let td = document.createElement("td");
-            td.innerHTML = "<span class='word-number'>" + (word+1) + ". </span>" +
-            "<span class='word'>" + card[word] + "</span>";
-            tr.appendChild(td);
+    if (!playerColor) {
+        let cardList = document.createElement("div");
+        cardList.classList.add("card-list")
+        let letters = ["A", "B", "C"];
+        for (let i in selectedCards) {
+            let card = selectedCards[i];
+            let table = document.createElement("table");
+            let th = document.createElement("th");
+            th.innerHTML = letters[i];
+            th.setAttribute("colspan", 3)
+            let tr = document.createElement("tr");
+            tr.appendChild(th);
+            table.appendChild(tr);
+            table.classList.add("spectator-card", "card-" + urlParams.get("diff"));
+            table.style.left = (100 + 460 * i) + "px";
             
+            for (let row = 0; row < 4; ++row) {
+                let tr = document.createElement("tr");
+                for (let j of [row, row + 4]) {
+                    let word = card[j];
+                    if (!word) {
+                        continue;
+                    }
+                    let td = document.createElement("td");
+                    td.innerHTML = "<span class='word-number'>" + (+j+1) + ". </span>" + 
+                    "<span class='word'>" + word + "</span>";
+                    tr.appendChild(td);
+                }
+                
+                table.appendChild(tr);
+            }
+            tr = document.createElement("tr");
+            table.appendChild(tr);
+            cardList.appendChild(table);
+        }
+        document.getElementById("game-wrap").appendChild(cardList);
+    }
+    else {
+        let wordTable = document.createElement("table");
+        wordTable.classList.add("word-table")
+        let tr = document.createElement("tr");
+        for (let letter of ["A", "B", "C"]) {
+            let th = document.createElement("th");
+            th.innerHTML = letter;
+            tr.appendChild(th);
         }
         wordTable.appendChild(tr);
+        
+        for (let word = 0; word < 7; ++word) {
+            let tr = document.createElement("tr");
+            for (let card of selectedCards) {
+            
+                let td = document.createElement("td");
+                td.innerHTML = "<span class='word-number'>" + (word+1) + ". </span>" +
+                "<span class='word'>" + card[word] + "</span>";
+                tr.appendChild(td);
+                
+            }
+            wordTable.appendChild(tr);
+        }
+        document.getElementById("game-wrap").appendChild(wordTable);
     }
     let allLetters = ["A", "A", "B", "B", "C", "C"];
     let allNumbers = [1, 2, 3, 4, 5, 6, 7];
@@ -162,13 +202,11 @@ function main() {
         }).then(data => console.log(data))
     }
 
-    document.getElementById("game-wrap").appendChild(wordTable);
+    
     if (!playerColor) {
         document.getElementById("finished").remove();
         document.getElementById("assignment").remove();
-        wordTable.style.bottom = "530px"
-        wordTable.style.fontSize = "24px";
-        wordTable.style.left = "560px";
+        
     }
 
 }
