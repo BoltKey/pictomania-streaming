@@ -80,9 +80,9 @@ function main() {
                 [50, -75],
                 [500, -75],
                 [950, -75],
-                [50, 660], 
-                [500, 660],
-                [950, 660],
+                [50, 677], 
+                [500, 677],
+                [950, 677],
             ]
             board.style.transform = "scale(0.7)";
         }
@@ -118,15 +118,17 @@ function main() {
             let table = document.createElement("table");
             let th = document.createElement("th");
             th.innerHTML = letters[i];
-            th.setAttribute("colspan", 3)
-            let tr = document.createElement("tr");
-            tr.appendChild(th);
-            table.appendChild(tr);
+            
             table.classList.add("spectator-card", "card-" + urlParams.get("diff"));
-            table.style.left = (100 + 460 * i) + "px";
             
             for (let row = 0; row < 4; ++row) {
                 let tr = document.createElement("tr");
+                if (row == 0) {
+                    tr.append(th);
+                }
+                else {
+                    tr.append(document.createElement("td"));
+                }
                 for (let j of [row, row + 4]) {
                     let word = card[j];
                     if (!word) {
@@ -142,7 +144,10 @@ function main() {
             }
             tr = document.createElement("tr");
             table.appendChild(tr);
-            cardList.appendChild(table);
+            let tableWrap = document.createElement("div");
+            tableWrap.classList.add("card-wrap");
+            tableWrap.appendChild(table);
+            cardList.appendChild(tableWrap);
         }
         document.getElementById("game-wrap").appendChild(cardList);
     }

@@ -145,6 +145,15 @@ const cards = {
             "bouncy"
           ],
           [
+            "wastepaper basket",
+            "trash can",
+            "composter",
+            "recycling bin",
+            "laundry basket",
+            "shopping basket",
+            "basketball net"
+          ],
+          [
             "skateboard",
             "scooter",
             "bicycle",
@@ -170,6 +179,15 @@ const cards = {
             "snake",
             "frog",
             "lizard"
+          ],
+          [
+            "peter pumpkin eater",
+            "twinkle little star",
+            "rock-a-bye baby",
+            "three blind mice",
+            "row your boat",
+            "mary had a little lamb",
+            "old king cole"
           ],
           [
             "toy story",
@@ -406,6 +424,15 @@ const cards = {
             "hockey puck"
           ],
           [
+            "mountain climber",
+            "football player",
+            "basketball player",
+            "hockey player",
+            "figure skater",
+            "snowboarder",
+            "skier"
+          ],
+          [
             "school desk",
             "kitchen table",
             "night stand",
@@ -461,6 +488,24 @@ const cards = {
           ]
         ],
         "medium": [
+          [
+            "a stitch in time …",
+            "when in rome …",
+            "a bird in the hand …",
+            "if life hands you lemons …",
+            "can’t make an omelette …",
+            "all good things …",
+            "all that glitters …"
+          ],
+          [
+            "never cry “wolf”.",
+            "faith can move mountains.",
+            "once bitten, twice shy.",
+            "blood is thicker than water.",
+            "when it rains, it pours.",
+            "measure twice, cut once.",
+            "clothes make the man."
+          ],
           [
             "superman",
             "batman",
@@ -561,6 +606,15 @@ const cards = {
             "bacon"
           ],
           [
+            "tortilla",
+            "crepe",
+            "pancake",
+            "deep dish pizza",
+            "thin crust pizza",
+            "pie",
+            "belgian waffle"
+          ],
+          [
             "miniskirt",
             "ball gown",
             "nightgown",
@@ -597,6 +651,15 @@ const cards = {
             "salad"
           ],
           [
+            "billy goats gruff",
+            "the three bears",
+            "the three little pigs",
+            "the big bad wolf",
+            "red riding hood",
+            "jack and the beanstalk",
+            "puss in boots"
+          ],
+          [
             "alice in wonderland",
             "wizard of oz",
             "peter pan",
@@ -631,6 +694,15 @@ const cards = {
             "nuclear reactor",
             "power station",
             "power lines"
+          ],
+          [
+            "chemical factory",
+            "weapons factory",
+            "automobile factory",
+            "paper factory",
+            "brewery",
+            "cannery",
+            "textile factory"
           ],
           [
             "motorcyclist",
@@ -739,6 +811,15 @@ const cards = {
             "hopscotch",
             "cat’s cradle",
             "apple bobbing"
+          ],
+          [
+            "harry potter",
+            "the hobbit",
+            "the lord of the rings",
+            "game of thrones",
+            "the neverending story",
+            "the chronicles of narnia",
+            "the princess bride"
           ],
           [
             "princess and the pea",
@@ -897,20 +978,20 @@ const cards = {
         "hard": [
           [
             "lose one’s head",
-            "hang one’s head",
-            "head someone off",
-            "make headway",
-            "up to one’s ears",
             "head out",
+            "up to one’s ears",
+            "head someone off",
+            "hang one’s head",
             "headstrong",
+            "make headway"
           ],
           [
             "draw things out",
             "draw a blank",
             "draw the line",
-            "draw conclusions",
             "draw attention",
             "drawing room",
+            "draw conclusions",
             "back to the drawing board"
           ],
           [
@@ -939,6 +1020,15 @@ const cards = {
             "hippie",
             "hermit",
             "castaway"
+          ],
+          [
+            "long john silver",
+            "the count of monte cristo",
+            "don quixote",
+            "robinson crusoe",
+            "william tell",
+            "robin hood",
+            "gulliver"
           ],
           [
             "dove",
@@ -1038,6 +1128,15 @@ const cards = {
             "playground fight",
             "bar fight",
             "street fight"
+          ],
+          [
+            "knock on wood",
+            "can’t see the forest",
+            "tree falls in the forest",
+            "worth two in the bush",
+            "beat around the bush",
+            "out of the woods",
+            "go out on a limb"
           ],
           [
             "filthy pig",
@@ -1185,12 +1284,48 @@ const cards = {
           ],
           [
             "flat on one’s back",
-            "die in one’s sleep",
             "relax",
             "dream",
             "nap",
             "sleep",
             "coma",
+            "die in one’s sleep"
+          ],
+          [
+            "thing the cat dragged in",
+            "cat out of the bag",
+            "the cat and the fiddle",
+            "cat got your tongue",
+            "internet cat pictures",
+            "cheshire cat",
+            "schrödinger’s cat"
+          ],
+          [
+            "cart before horse",
+            "hold your horses",
+            "horsing around",
+            "gift horse",
+            "horse’s mouth",
+            "wild horses drag me",
+            "beat a dead horse"
+          ],
+          [
+            "cold war",
+            "civil war",
+            "waterloo",
+            "norman conquest",
+            "invasion of normandy",
+            "battle of britain",
+            "pearl harbor"
+          ],
+          [
+            "jurassic",
+            "prehistory",
+            "antiquity",
+            "middle ages",
+            "industrial revolution",
+            "modern times",
+            "the future"
           ],
           [
             "opossum",
@@ -1364,6 +1499,15 @@ const cards = {
             "employee",
             "employer",
             "manager"
+          ],
+          [
+            "purchasing",
+            "marketing",
+            "finance department",
+            "human resources",
+            "legal department",
+            "production",
+            "research & development"
           ],
           [
             "sketch",
