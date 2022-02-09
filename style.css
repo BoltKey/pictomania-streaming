@@ -8,7 +8,6 @@ body {
     height: 1240px;
     margin: auto;
     background: url(bg.jpg);
-    background-size: cover;
     position: relative;
 }
 
@@ -49,6 +48,7 @@ table {
     font-family: arial;
     font-size: 16.5px;
     color: rgb(240, 255, 255);
+    z-index: 10;
 }
 
 button {

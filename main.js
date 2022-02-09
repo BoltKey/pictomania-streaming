@@ -43,7 +43,7 @@ function main() {
         let boardWrap = document.createElement("div");
         boardWrap.classList.add(color, "player-board");
         boardWrap.appendChild(frame);
-        if (color !== playerColor) {
+        if (color !== playerColor && playerColor) {
             let buttonWrap = document.createElement("div");
             buttonWrap.classList.add("button-wrap");
             for (let i = 1; i <= 7; ++i) {
@@ -67,6 +67,7 @@ function main() {
         if (!board) {
             debugger;
         }
+        board.style.transform = "scale(0.62)";
         let places = [
             [-50, 400], 
             [50, -110],
@@ -76,17 +77,17 @@ function main() {
         ]
         if (!playerColor) {
             places = [
-                [50, 545], 
+                [50, 565], 
                 [50, -75],
                 [500, -75],
                 [950, -75],
-                [950, 545],
-                [500, 545]
+                [950, 565],
+                [500, 565]
             ]
+            board.style.transform = "scale(0.7)";
         }
         board.style.left = places[index][0] + "px";
         board.style.top = places[index][1] + "px";
-        board.style.transform = "scale(0.62)";
     }
     for (color of allColors) {
         let board = allBoards[color];
@@ -165,7 +166,7 @@ function main() {
     if (!playerColor) {
         document.getElementById("finished").remove();
         document.getElementById("assignment").remove();
-        wordTable.style.bottom = "574px"
+        wordTable.style.bottom = "594px"
     }
 
 }
