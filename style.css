@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "calama";
-    src: url("Calama_new.ttf") format("truetype");
+    font-family: "myfont";
+    src: url("Brokenz.ttf") format("truetype");
 }
 @font-face {
     font-family: "deut";
@@ -96,8 +96,8 @@ button#finished {
 }
 
 .spectator-card {
-    font-family: deut;
-    font-size: 40px;
+    font-family: myfont;
+    font-size: 37px;
     border-radius: 10px;
     padding: 5px;
     filter: drop-shadow(2px 4px 6px black);
@@ -114,6 +114,7 @@ button#finished {
 }
 
 .card-list td {
+    padding: 0;
     padding-right: 10px;
     padding-left: 10px;
 }

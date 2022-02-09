@@ -135,7 +135,7 @@ function main() {
                         continue;
                     }
                     let td = document.createElement("td");
-                    td.innerHTML = "<span class='word-number'>" + (+j+1) + ". </span>" + 
+                    td.innerHTML = "<span class='word-number'>" + (+j+1) + ".&nbsp</span>" + 
                     "<span class='word'>" + word + "</span>";
                     tr.appendChild(td);
                 }

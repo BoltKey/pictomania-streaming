@@ -186,7 +186,7 @@ const cards = {
             "rock-a-bye baby",
             "three blind mice",
             "row your boat",
-            "mary had a little lamb",
+            "mary had a little lamb",
             "old king cole"
           ],
           [
@@ -344,7 +344,7 @@ const cards = {
           ],
           [
             "chess",
-            "snakes and ladders",
+            "snakes and ladders",
             "backgammon",
             "monopoly",
             "dominoes",
@@ -489,20 +489,20 @@ const cards = {
         ],
         "medium": [
           [
-            "a stitch in time …",
-            "when in rome …",
-            "a bird in the hand …",
-            "if life hands you lemons …",
-            "can’t make an omelette …",
-            "all good things …",
-            "all that glitters …"
+              "if life hands you lemons…",
+            "a stitch in time…",
+            "when in rome…",
+            "a bird in the hand…",
+            "can’t make an omelette…",
+            "all good things…",
+            "all that glitters…"
           ],
           [
             "never cry “wolf”.",
             "faith can move mountains.",
             "once bitten, twice shy.",
             "blood is thicker than water.",
-            "when it rains, it pours.",
+            "when it rains, it pours.",
             "measure twice, cut once.",
             "clothes make the man."
           ],
@@ -653,15 +653,15 @@ const cards = {
           [
             "billy goats gruff",
             "the three bears",
-            "the three little pigs",
+            "the three little pigs",
             "the big bad wolf",
             "red riding hood",
-            "jack and the beanstalk",
+            "jack and the beanstalk",
             "puss in boots"
           ],
           [
-            "alice in wonderland",
-            "wizard of oz",
+              "wizard of oz",
+              "alice in wonderland",
             "peter pan",
             "tom sawyer",
             "winnie the pooh",
@@ -814,16 +814,16 @@ const cards = {
           ],
           [
             "harry potter",
+            "the lord of the rings",
+            "the princess bride",
             "the hobbit",
-            "the lord of the rings",
             "game of thrones",
+            "the chronicles of narnia",
             "the neverending story",
-            "the chronicles of narnia",
-            "the princess bride"
           ],
           [
-            "princess and the pea",
-            "beauty and the beast",
+            "princess and the pea",
+            "beauty and the beast",
             "snow white",
             "goldilocks",
             "sleeping beauty",
@@ -859,7 +859,7 @@ const cards = {
           ],
           [
             "birthday",
-            "first day of school",
+            "first day of school",
             "graduation",
             "engagement",
             "wedding",
@@ -925,9 +925,9 @@ const cards = {
             "cruise ship",
             "spanish galleon",
             "fishing boat",
+            "aircraft carrier",
             "oil tanker",
             "battleship",
-            "aircraft carrier"
           ],
           [
             "path",
@@ -1082,7 +1082,7 @@ const cards = {
             "pass a car",
             "swerve",
             "slow down",
-            "step on the brakes"
+            "step on the brakes"
           ],
           [
             "homer",
@@ -1131,11 +1131,11 @@ const cards = {
           ],
           [
             "knock on wood",
-            "can’t see the forest",
-            "tree falls in the forest",
-            "worth two in the bush",
-            "beat around the bush",
-            "out of the woods",
+            "can’t see the forest",
+            "tree falls in the forest",
+            "worth two in the bush",
+            "beat around the bush",
+            "out of the woods",
             "go out on a limb"
           ],
           [
@@ -1150,7 +1150,7 @@ const cards = {
           [
             "get lost",
             "take a hike",
-            "make a run for it",
+            "make a run for it",
             "beat a retreat",
             "get out of there",
             "turn tail",
@@ -1266,7 +1266,7 @@ const cards = {
           ],
           [
             "suburb",
-            "outskirts of town",
+            "outskirts of town",
             "metropolis",
             "downtown",
             "slum",
@@ -1293,8 +1293,8 @@ const cards = {
           ],
           [
             "thing the cat dragged in",
-            "cat out of the bag",
-            "the cat and the fiddle",
+            "cat out of the bag",
+            "the cat and the fiddle",
             "cat got your tongue",
             "internet cat pictures",
             "cheshire cat",
@@ -1314,7 +1314,7 @@ const cards = {
             "civil war",
             "waterloo",
             "norman conquest",
-            "invasion of normandy",
+            "invasion of normandy",
             "battle of britain",
             "pearl harbor"
           ],
