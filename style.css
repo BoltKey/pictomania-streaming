@@ -1,13 +1,13 @@
 body {
     margin: 0;
     color: azure;
+    background: url(bg.jpg);
 }
 
 #game-wrap {
     width: 1600px;
     height: 1240px;
     margin: auto;
-    background: url(bg.jpg);
     position: relative;
 }
 

@@ -77,12 +77,12 @@ function main() {
         ]
         if (!playerColor) {
             places = [
-                [50, 565], 
                 [50, -75],
                 [500, -75],
                 [950, -75],
+                [50, 565], 
+                [500, 565],
                 [950, 565],
-                [500, 565]
             ]
             board.style.transform = "scale(0.7)";
         }
@@ -121,8 +121,8 @@ function main() {
     
     for (let word = 0; word < 7; ++word) {
         let tr = document.createElement("tr");
-        
         for (let card of selectedCards) {
+        
             let td = document.createElement("td");
             td.innerHTML = "<span class='word-number'>" + (word+1) + ". </span>" +
             "<span class='word'>" + card[word] + "</span>";
