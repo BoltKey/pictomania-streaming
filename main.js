@@ -80,9 +80,9 @@ function main() {
                 [50, -75],
                 [500, -75],
                 [950, -75],
-                [50, 565], 
-                [500, 565],
-                [950, 565],
+                [50, 630], 
+                [500, 630],
+                [950, 630],
             ]
             board.style.transform = "scale(0.7)";
         }
@@ -166,7 +166,9 @@ function main() {
     if (!playerColor) {
         document.getElementById("finished").remove();
         document.getElementById("assignment").remove();
-        wordTable.style.bottom = "594px"
+        wordTable.style.bottom = "530px"
+        wordTable.style.fontSize = "24px";
+        wordTable.style.left = "560px";
     }
 
 }
