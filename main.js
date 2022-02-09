@@ -74,6 +74,16 @@ function main() {
             [950, -110],
             [1050, 400],
         ]
+        if (!playerColor) {
+            places = [
+                [50, 545], 
+                [50, -75],
+                [500, -75],
+                [950, -75],
+                [950, 545],
+                [500, 545]
+            ]
+        }
         board.style.left = places[index][0] + "px";
         board.style.top = places[index][1] + "px";
         board.style.transform = "scale(0.62)";
@@ -83,6 +93,8 @@ function main() {
         if (color == playerColor) {
             board.style.left = 500 + "px";
             board.style.top = 440 + "px";
+            board.style.zIndex = 5;
+            board.style.outlineWidth = "5px";
         }
         else {
             placeBoard(board, oppBoardIndex++);
@@ -111,7 +123,7 @@ function main() {
         
         for (let card of selectedCards) {
             let td = document.createElement("td");
-            td.innerHTML = "<span class='word-number'>" + (word+1) + ".</span>" +
+            td.innerHTML = "<span class='word-number'>" + (word+1) + ". </span>" +
             "<span class='word'>" + card[word] + "</span>";
             tr.appendChild(td);
             
@@ -150,6 +162,12 @@ function main() {
     }
 
     document.getElementById("game-wrap").appendChild(wordTable);
+    if (!playerColor) {
+        document.getElementById("finished").remove();
+        document.getElementById("assignment").remove();
+        wordTable.style.bottom = "574px"
+    }
+
 }
 
 onload = main;

@@ -1,19 +1,24 @@
 body {
     margin: 0;
+    color: azure;
 }
 
 #game-wrap {
     width: 1600px;
     height: 1240px;
     margin: auto;
-    background: gray;
+    background: url(bg.jpg);
+    background-size: cover;
     position: relative;
 }
 
 .player-board {
     background: white;
-    outline: solid 5px;
+    outline: solid 15px;
     position: absolute;
+    filter: drop-shadow(20px 16px 4px black);
+    border-radius: 33px;
+    overflow: hidden;
 }
 
 .player-board.green {
@@ -43,6 +48,7 @@ table {
     font-weight: bold;
     font-family: arial;
     font-size: 16.5px;
+    color: rgb(240, 255, 255);
 }
 
 button {
