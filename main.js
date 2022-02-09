@@ -1,8 +1,8 @@
 function main() {
     const boardUrls = [
-        "https://app.ziteboard.com/team/e816af3c-986f-481a-9359-4c5a0977abdd",
-        "https://app.ziteboard.com/team/67c22ecb-0fcc-4a13-9912-0dc80682368c",
-        "https://app.ziteboard.com/team/9b7fc6ff-ae1e-4ae5-9cb6-52f71ec95dd4",
+        "https://app.ziteboard.com/team/7e7f39d4-f6ca-40d6-8756-d4ea7332ab77",
+        "https://app.ziteboard.com/team/5f176c62-3a42-468a-985d-691ea7f5b61c",
+        "https://app.ziteboard.com/team/af84f3d9-8754-4829-b7fd-d994da91d19d",
         "https://app.ziteboard.com/team/24402d39-5bb7-49e3-bcea-82366573948f",
         "https://app.ziteboard.com/team/ce25ca0e-e66e-4f74-b899-8c6f57706d27",
         "https://app.ziteboard.com/team/34059d7b-3c75-4f5a-ba43-27d29aaf15bc"
