@@ -897,12 +897,12 @@ const cards = {
         "hard": [
           [
             "lose one’s head",
-            "head out",
-            "up to one’s ears",
-            "head someone off",
             "hang one’s head",
+            "head someone off",
+            "make headway",
+            "up to one’s ears",
+            "head out",
             "headstrong",
-            "make headway"
           ],
           [
             "draw things out",
@@ -1185,39 +1185,12 @@ const cards = {
           ],
           [
             "flat on one’s back",
+            "die in one’s sleep",
             "relax",
             "dream",
             "nap",
             "sleep",
             "coma",
-            "die in one’s sleep"
-          ],
-          [
-            "cart before horse",
-            "hold your horses",
-            "horsing around",
-            "gift horse",
-            "horse’s mouth",
-            "wild horses drag me",
-            "beat a dead horse"
-          ],
-          [
-            "cold war",
-            "civil war",
-            "waterloo",
-            "norman conquest",
-            "invasion of normandy",
-            "battle of britain",
-            "pearl harbor"
-          ],
-          [
-            "jurassic",
-            "prehistory",
-            "antiquity",
-            "middle ages",
-            "industrial revolution",
-            "modern times",
-            "the future"
           ],
           [
             "opossum",
