@@ -139,3 +139,15 @@ button#finished {
     flex-grow: 1;
     position: relative;
 }
+
+.player-board.spectator > iframe {
+    width: 644px;
+    height: 728px;
+    margin-right: -40px;
+    margin-top: -63px;
+    margin-bottom: -115px;
+}
+
+.hidden {
+    display: none;
+}
